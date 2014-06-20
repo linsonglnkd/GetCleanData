@@ -105,3 +105,5 @@ dst_narrow <- melt(dst_selected, id=c(1,2), measure.vars=3:ncol(dst_selected))
 ## calcuate the mean by subject, activity, variable
 library(plyr)
 dst_tidy <- ddply(dst_narrow, .(subject, activity, variable), summarize, mean=mean(value))
+## save the data
+save(dst_tidy, file = 'tidy_data.RData')
