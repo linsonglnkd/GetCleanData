@@ -107,3 +107,6 @@ library(plyr)
 dst_tidy <- ddply(dst_narrow, .(subject, activity, variable), summarize, mean=mean(value))
 ## save the data
 save(dst_tidy, file = 'tidy_data.RData')
+write.table(dst_tidy, file = 'tidy_data.txt', sep=",", row.names=FALSE)
+## to read the data, use this code
+## read.csv(file = 'tidy_data.txt', header=TRUE)
