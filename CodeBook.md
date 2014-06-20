@@ -6,5 +6,6 @@
 * Part 4. Only keep variables that end with mean() and std()
 * Part 5. Use descriptive labels
 * Part 6. Use descriptive variable names
-* Part 7. Calculate average
+* Part 7. Calculate average. Make a narrow tidy dataset.
+
 
